@@ -177,10 +177,10 @@ int main()
             const ImU32 bg = ImGui::GetColorU32(ImGuiCol_Button);
 
             ImSpinner::SpinnerAngTriple("SpinnerAngTriple", 16, 13, 10, 1.3f, ImColor(255, 255, 255), ImColor(255, 0, 0), ImColor(255, 255, 255), 5 * velocity, 1.5f * IM_PI);
-            ImGui::BufferingBar("buffer_bar", count / 400.0f, ImVec2(400, 6), bg, col);
+            ImGui::BufferingBar("buffer_bar", count / 200.0f, ImVec2(400, 6), bg, col);
             ImGui::End();
             ++count;
-            if (count == 400)
+            if (count == 200)
                 tab = 2;
         }
         
