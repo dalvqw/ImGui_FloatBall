@@ -160,7 +160,6 @@ int main()
                     if (ImGui::Button(u8"登录", ImVec2(162 * dpi_scale, 25 * dpi_scale)))
                     {
                         Pos = ImGui::GetWindowPos();
-                        ImGui::SetWindowPos("Progress", Pos, 1);
                         tab = 1;
                     }
                 }
@@ -170,6 +169,7 @@ int main()
         }
         if (tab == 1)
         {
+            ImGui::SetWindowPos("Progress", Pos, 1);
             ImGui::Begin("Progress", &bar, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoScrollWithMouse);
             ImGui::SetWindowSize({ 400, 80 });
 
