@@ -169,6 +169,7 @@ int main()
         }
         if (tab == 1)
         {
+            ImGui::SetNextWindowBgAlpha(0.0f);
             ImGui::SetWindowPos("Progress", Pos, 1);
             ImGui::Begin("Progress", &bar, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoScrollWithMouse);
             ImGui::SetWindowSize({ 400, 80 });
