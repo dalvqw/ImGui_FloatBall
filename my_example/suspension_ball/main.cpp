@@ -247,6 +247,7 @@ int main()
                         ShellExecute(nullptr, "open", "https:///github.com/dalvqw/Imgui_FloatBall", nullptr, nullptr, SW_SHOWNORMAL);
                     ImGui::PopStyleColor();
 
+                    PlotVar("Framerate", ImGui::GetIO().Framerate);
                     ImGui::Text(u8"Frames (%.1fFPS)", ImGui::GetIO().Framerate);
                     strftime(tmp, sizeof(tmp), "%Y-%m-%d %H:%M", localtime(&t));
                     ImGui::TextColored(Color[ImGuiCol_Text], "%s", tmp);
